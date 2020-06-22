@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.android.sitedetails.NewSiteDetails"
+    tools:showIn="@layout/activity_new_site_details">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="12dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/site_name"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="8dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/sitename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:hint="Site Name"
+                android:inputType="textPersonName"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textColorLink="@color/colorPrimary1"
+                android:textCursorDrawable="@color/colorPrimary1"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/site_id"
+                android:paddingTop="12dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="20sp" />
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:paddingLeft="8dp">
+            <EditText
+                android:id="@+id/siteid"
+                android:hint="Site ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textSize="20sp"
+                android:textColorLink="@color/colorPrimary1"
+                android:textCursorDrawable="@color/colorPrimary1"
+                android:inputType="textPersonName"
+                 />
+    </LinearLayout>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:text="@string/cabinet_type"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="20sp" />
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingLeft="8dp">
+            <EditText
+                android:id="@+id/cabinettype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:fontFamily="sans-serif"
+                android:hint="Cabinet Type"
+                android:textColorLink="@color/colorPrimary1"
+                android:textCursorDrawable="@color/colorPrimary1"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/bbu_type"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="20sp"
+                android:paddingTop="12dp" />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="8dp">
+            <AutoCompleteTextView
+                android:id="@+id/bbutype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:hint="BBU type"
+                android:textColorLink="@color/colorPrimary1"
+                android:textCursorDrawable="@color/colorPrimary1"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/band"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="20sp"
+                android:paddingTop="12dp" />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="8dp">
+            <AutoCompleteTextView
+                android:id="@+id/band"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:hint="Band"
+                android:inputType="text"
+                android:textColorLink="@color/colorPrimary1"
+                android:textCursorDrawable="@color/colorPrimary1"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/sector_id"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="20sp"
+            android:paddingTop="12dp"/>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="8dp">
+            <EditText
+                android:id="@+id/sectorid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:fontFamily="sans-serif"
+                android:hint="Sector ID"
+                android:textColorLink="@color/colorPrimary1"
+                android:textCursorDrawable="@color/colorPrimary1"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/antenna_type"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="20sp"
+                android:paddingTop="12dp" />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="8dp">
+            <AutoCompleteTextView
+                android:id="@+id/antennatype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:fontFamily="sans-serif"
+                android:hint="Antenna Type"
+                android:textColorLink="@color/colorPrimary1"
+                android:textCursorDrawable="@color/colorPrimary1"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/electrical_tilt"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="20sp"
+                android:paddingTop="12dp" />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="8dp">
+            <EditText
+                android:id="@+id/electricaltilt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:fontFamily="sans-serif"
+                android:hint="Electrical Tilt"
+                android:textColorLink="@color/colorPrimary1"
+                android:textCursorDrawable="@color/colorPrimary1"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/mechanical_tilt"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="20sp"
+                android:paddingTop="12dp" />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="8dp">
+            <EditText
+                android:id="@+id/mechanicaltilt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:fontFamily="sans-serif"
+                android:hint="Mechanical Tilt"
+                android:textColorLink="@color/colorPrimary1"
+                android:textCursorDrawable="@color/colorPrimary1"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/azimuth"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="20sp"
+                android:paddingTop="12dp" />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="8dp">
+            <EditText
+                android:id="@+id/azimuth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:fontFamily="sans-serif"
+                android:hint="Azimuth"
+                android:textColorLink="@color/colorPrimary1"
+                android:textCursorDrawable="@color/colorPrimary1"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/tower_height"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="20sp"
+                android:paddingTop="12dp" />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="8dp">
+            <EditText
+                android:id="@+id/towerheight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                tools:ignore="TextFields"
+                android:fontFamily="sans-serif"
+                android:hint="Tower Height"
+                android:textColorLink="@color/colorPrimary1"
+                android:textCursorDrawable="@color/colorPrimary1"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/antenna_height"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="20sp"
+                android:paddingTop="12dp" />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="8dp">
+            <EditText
+                android:id="@+id/antennaheight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:fontFamily="sans-serif"
+                android:hint="Antenna Height"
+                android:textColorLink="@color/colorPrimary1"
+                android:textCursorDrawable="@color/colorPrimary1"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                tools:ignore="TextFields" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/rru_type"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="20sp"
+                android:paddingTop="12dp" />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="8dp">
+            <EditText
+                android:id="@+id/rrutype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:textColorLink="@color/colorPrimary1"
+                android:textCursorDrawable="@color/colorPrimary1"
+                android:fontFamily="sans-serif"
+                android:hint="RRU Type"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="20sp"
+                android:paddingTop="12dp" />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="8dp">
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:textColorLink="@color/colorPrimary1"
+                android:textCursorDrawable="@color/colorPrimary1"
+                android:fontFamily="sans-serif"
+                android:hint="Date"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                tools:ignore="TextFields" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="20sp"
+                android:paddingTop="12dp" />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="8dp">
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:textColorLink="@color/colorPrimary1"
+                android:textCursorDrawable="@color/colorPrimary1"
+                android:fontFamily="sans-serif"
+                android:hint="Name"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnsave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_weight="1"
+                android:layout_marginTop="12dp"
+                android:paddingTop="8dp"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#FFFFFF"
+                android:theme="@style/Button"
+                android:onClick="saveDetails"/>
+        <Button
+            android:id="@+id/btnclear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Continue Site"
+            android:layout_weight="1"
+            android:layout_marginTop="12dp"
+            android:paddingTop="8dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#FFFFFF"
+            android:theme="@style/Button" />
+        <Button
+            android:id="@+id/btnclear1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Add New Site"
+            android:layout_weight="1"
+            android:layout_marginTop="12dp"
+            android:paddingTop="8dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#FFFFFF"
+            android:theme="@style/Button" />
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
+
+
+
+
+
+
